@@ -129,9 +129,9 @@ class AdminArea extends Component {
     const { scenes, arduinoEvents, volumeCommands, logs, minutes } = this.state;
 
     return (
-      <div>
+      <div className="admin-panels-container">
         <div className="header-area">
-          Current State: {this.state.currentStateName}
+            Current State: <span className="admin-current-state">{this.state.currentStateName}</span>
         </div>
         <div className="scenes-area">
           {scenes.map(scene => (

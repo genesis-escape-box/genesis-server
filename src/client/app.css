@@ -1,5 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  background-color: #333;
+  color: #fff;
   margin: 0;
+  padding: 0;
+  font-family: arial, "sans-serif";
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .bOtCtN.terminalContainer {
@@ -45,19 +55,16 @@ img {
 }
 
 .admin-button {
-  font-family: inherit;
-  font-size: inherit;
-  cursor: pointer;
-  padding: 25px 80px;
   display: inline-block;
-  margin: 15px 30px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
+  width: 245px;
+  margin: 10px 10px;
   outline: none;
-  position: relative;
-  transition: all 0.3s;
   border: 3px solid #fff;
+  padding: 20px 20px;
+  font-size: 16px;
+  transition: all 0.3s;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .admin-button-scene {
@@ -90,6 +97,40 @@ img {
   color: #fcd04b;
 }
 
+.admin-panels-container {
+  margin: 0 20px;
+}
+
+.header-area,
+.scenes-area,
+.arduino-events-area,
+.volume-command-area,
+.logs-area {
+  padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .scenes-area,
+  .arduino-events-area,
+  .volume-command-area {
+    text-align: center;
+  }
+}
+
+.header-area {
+  position: sticky;
+  top: 0;
+  background: #333;
+  height: 50px;
+  line-height: 30px;
+  padding: 10px 0;
+  color: #aaa;
+}
+
+.admin-current-state {
+  color: #0f0;
+}
+
 .scenes-area {
   background: #0e83cd;
 }
@@ -102,11 +143,8 @@ img {
   background: #fcd04b;
 }
 
-.header-area {
-  height: 50px;
-  background: #ecf0f1;
-  padding-left: 10px;
-  padding-top: 5px;
-  font-size: 20px;
-  font-family: inherit;
+.logs-area {
+  padding: 10px 0;
+  font-family: consolas, "courier new", fixed, "sans-serif";
+  color: #0f0;
 }
