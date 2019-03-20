@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: arial, "sans-serif";
-  font-size: 16px;
+  font-size: 15px;
   line-height: 16px;
 }
 
@@ -59,9 +59,9 @@ img {
   width: 245px;
   margin: 10px 10px;
   outline: none;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   padding: 20px 20px;
-  font-size: 16px;
+  font-size: 15px;
   transition: all 0.3s;
   cursor: pointer;
   border-radius: 5px;
@@ -127,6 +127,30 @@ img {
   color: #aaa;
 }
 
+.scroll-to-top-btn,
+.scroll-to-bottom-btn {
+  position: absolute;
+  top: 10px;
+  outline: none;
+  border: 2px solid #fff;
+  padding: 5px 10px;
+  font-size: 15px;
+  transition: all 0.3s;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #666;
+  color: #fff;
+}
+
+.scroll-to-top-btn {
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.scroll-to-bottom-btn {
+  right: 50px;
+}
+
 .admin-current-state {
   color: #0f0;
 }
@@ -147,4 +171,9 @@ img {
   padding: 10px 0;
   font-family: consolas, "courier new", fixed, "sans-serif";
   color: #0f0;
+  word-break: break-all;
+}
+
+.log-msg {
+  margin-bottom: 10px;
 }

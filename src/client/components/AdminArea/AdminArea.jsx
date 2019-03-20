@@ -131,7 +131,9 @@ class AdminArea extends Component {
     return (
       <div className="admin-panels-container">
         <div className="header-area">
-            Current State: <span className="admin-current-state">{this.state.currentStateName}</span>
+            State: <span className="admin-current-state">{this.state.currentStateName}</span>
+            <button onClick={() => {window.scrollTo(0,0)}} className="scroll-to-top-btn">V</button>
+	        <button onClick={() => {window.scrollTo(0,document.body.scrollHeight)}} className="scroll-to-bottom-btn">V</button>
         </div>
         <div className="scenes-area">
           {scenes.map(scene => (
@@ -204,7 +206,7 @@ class AdminArea extends Component {
 
         <div className="logs-area">
           {logs.map((log, index) => {
-            return <div key={index}>{log}</div>;
+            return <div key={index} className="log-msg">{log}</div>;
           })}
         </div>
       </div>
