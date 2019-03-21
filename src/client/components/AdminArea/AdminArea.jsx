@@ -20,7 +20,7 @@ class AdminArea extends Component {
       ],
       volumeCommands: ["VolumeUp", "VolumeDown", "Mute"],
       currentStateInterval: null,
-      currentStateName: "Waiting for server response...."
+      currentStateName: "Waiting for response..."
     };
   }
 
