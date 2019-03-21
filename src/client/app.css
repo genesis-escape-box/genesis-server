@@ -66,7 +66,6 @@ img {
 .arduino-events-area,
 .volume-command-area,
 .logs-area {
-  margin: 20px 0;
   padding: 10px;
   opacity: 0.9;
 }
@@ -81,6 +80,7 @@ img {
 
 .header-area {
   margin-top: 0;
+  margin-bottom: 0;
   position: sticky;
   z-index: 1;
   top: 0;
@@ -88,7 +88,7 @@ img {
   background: #333;
   height: 50px;
   line-height: 30px;
-  padding: 10px 0;
+  padding: 10px 10px;
   color: #aaa;
 }
 
@@ -108,41 +108,45 @@ img {
 }
 
 .scroll-to-top-btn {
-  right: 50px;
+  right: 55px;
   transform: rotate(180deg);
 }
 
 .scroll-to-bottom-btn {
-  right: 0;
+  right: 10px;
 }
 
 .admin-current-state {
-  color: #0f0;
+  color: #0fc;
 }
 
-.scenes-area {
+.scenes-area .admin-button {
   background: #0079ef;
 }
 
-.arduino-events-area {
+.arduino-events-area .admin-button {
   background: #ff454f;
 }
 
-.volume-command-area {
+.volume-command-area  .admin-button {
   background: #ffc002;
 }
 
 .logs-area {
   opacity: 1;
   background: #333;
+  margin: 20px;
+  border: 1px solid #0fc;
   padding: 5px 5px;
   font-family: consolas, "courier new", fixed, "sans-serif";
-  color: #0f0;
+  color: #0fc;
   word-break: break-all;
+  font-size: 13px;
+  line-height: 13px;
 }
 
 .log-msg {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .admin-button {
