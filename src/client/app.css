@@ -54,49 +54,6 @@ img {
   }
 }
 
-.admin-button {
-  display: inline-block;
-  width: 245px;
-  margin: 10px 10px;
-  outline: none;
-  border: 2px solid #fff;
-  padding: 20px 20px;
-  font-size: 15px;
-  transition: all 0.3s;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.admin-button-scene {
-  background: #0e83cd;
-  color: white;
-}
-
-.admin-button-scene:hover {
-  background: white;
-  color: #0e83cd;
-}
-
-.admin-button-arduino-event {
-  background: #f06060;
-  color: white;
-}
-
-.admin-button-arduino-event:hover {
-  background: white;
-  color: #f06060;
-}
-
-.admin-button-volume-command {
-  background: #fcd04b;
-  color: white;
-}
-
-.admin-button-volume-command:hover {
-  background: white;
-  color: #fcd04b;
-}
-
 .admin-panels-container {
   margin: 0 20px;
 }
@@ -176,4 +133,34 @@ img {
 
 .log-msg {
   margin-bottom: 10px;
+}
+
+.admin-button {
+  display: inline-block;
+  width: 245px;
+  margin: 10px 10px;
+  outline: none;
+  border: 2px solid #fff;
+  background: transparent;
+  color: white;
+  padding: 20px 20px;
+  font-size: 15px;
+  transition: all 0.3s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.admin-button-scene:hover {
+  background: white;
+  color: #0e83cd;
+}
+
+.admin-button-arduino-event:hover {
+  background: white;
+  color: #f06060;
+}
+
+.admin-button-volume-command:hover {
+  background: white;
+  color: #fcd04b;
 }
