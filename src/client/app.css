@@ -113,15 +113,15 @@ img {
 }
 
 .scenes-area {
-  background: #0e83cd;
+  background: #0079ef;
 }
 
 .arduino-events-area {
-  background: #f06060;
+  background: #ff454f;
 }
 
 .volume-command-area {
-  background: #fcd04b;
+  background: #ffc002;
 }
 
 .logs-area {
@@ -152,15 +152,15 @@ img {
 
 .admin-button-scene:hover {
   background: white;
-  color: #0e83cd;
+  color: #0079ef;
 }
 
 .admin-button-arduino-event:hover {
   background: white;
-  color: #f06060;
+  color: #ff454f;
 }
 
 .admin-button-volume-command:hover {
   background: white;
-  color: #fcd04b;
+  color: #ffc002;
 }
