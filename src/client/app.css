@@ -61,11 +61,38 @@ img {
   margin: 0 20px;
 }
 
+.admin-button {
+  display: inline-block;
+  width: 245px;
+  margin: 10px 10px;
+  outline: none;
+  border: 1px solid #fff;
+  background: #000;
+  opacity: 0.9;
+  color: white;
+  padding: 20px 20px;
+  font-size: 15px;
+  transition: all 0.3s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.admin-button-scene:hover,
+.admin-button-arduino-event:hover,
+.admin-button-volume-command:hover {
+  background: #fff;
+  color: #000;
+}
+
+.admin-button-text {
+}
+
 .header-area,
 .scenes-area,
 .arduino-events-area,
 .volume-command-area,
 .logs-area {
+  margin-top: 40px;
   padding: 10px;
   opacity: 0.9;
 }
@@ -90,6 +117,7 @@ img {
   line-height: 30px;
   padding: 10px 10px;
   color: #aaa;
+  border: 1px solid #666;
 }
 
 .scroll-to-top-btn,
@@ -120,23 +148,27 @@ img {
   color: #0fc;
 }
 
+.scenes-area {
+  margin-top: 0;
+}
+
 .scenes-area .admin-button {
-  background: #0079ef;
+  border: 2px solid #0fc;
 }
 
 .arduino-events-area .admin-button {
-  background: #ff454f;
+  border: 2px solid #f99;
 }
 
 .volume-command-area  .admin-button {
-  background: #ffc002;
+  border: 2px solid #fc3;
 }
 
 .logs-area {
-  opacity: 1;
   background: #333;
-  margin: 20px;
-  border: 1px solid #0fc;
+  opacity: 0.9;
+  margin: 60px 0 20px 0;
+  border: 1px solid #666;
   padding: 5px 5px;
   font-family: consolas, "courier new", fixed, "sans-serif";
   color: #0fc;
@@ -147,37 +179,4 @@ img {
 
 .log-msg {
   margin-bottom: 20px;
-}
-
-.admin-button {
-  display: inline-block;
-  width: 245px;
-  margin: 10px 10px;
-  outline: none;
-  border: 2px solid #fff;
-  background: transparent;
-  color: white;
-  padding: 20px 20px;
-  font-size: 15px;
-  transition: all 0.3s;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.admin-button-text {
-}
-
-.admin-button-scene:hover {
-  background: white;
-  color: #0079ef;
-}
-
-.admin-button-arduino-event:hover {
-  background: white;
-  color: #ff454f;
-}
-
-.admin-button-volume-command:hover {
-  background: white;
-  color: #ffc002;
 }
