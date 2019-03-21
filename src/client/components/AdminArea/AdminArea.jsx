@@ -141,8 +141,7 @@ class AdminArea extends Component {
               key={scene}
               className="admin-button admin-button-scene"
               onClick={e => this.excuteScene(scene)}
-            >
-              {scene}
+            ><span className="admin-button-text">{scene}</span>
             </button>
           ))}
         </div>
@@ -153,8 +152,7 @@ class AdminArea extends Component {
               key={event}
               className="admin-button admin-button-arduino-event"
               onClick={e => this.excuteArdiunoEvent(event)}
-            >
-              {event}
+            ><span className="admin-button-text">{event}</span>
             </button>
           ))}
         </div>
@@ -165,8 +163,7 @@ class AdminArea extends Component {
               key={cmd}
               className="admin-button admin-button-volume-command"
               onClick={e => this.excuteVolumeCommand(cmd)}
-            >
-              {cmd}
+            ><span className="admin-button-text">{cmd}</span>
             </button>
           ))}
           <button
