@@ -143,12 +143,12 @@ img {
 }
 
 .scroll-to-top-btn {
-  right: 0;
+  right: 50px;
   transform: rotate(180deg);
 }
 
 .scroll-to-bottom-btn {
-  right: 50px;
+  right: 0;
 }
 
 .admin-current-state {
