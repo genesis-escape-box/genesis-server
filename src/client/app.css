@@ -105,8 +105,10 @@ img {
 }
 
 .header-area {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1;
   margin-top: 0;
   margin-bottom: 0;
@@ -148,7 +150,7 @@ img {
 }
 
 .scenes-area {
-  margin-top: 0;
+  margin-top: 50px;
 }
 
 .scenes-area .admin-button {
